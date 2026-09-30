@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>HTML Studio</title>
+  </head>
+  <body data-v="code">
+    <div class="bar">
+      <div class="seg mtabs">
+        <button id="vc" aria-pressed="true">Code</button>
+        <button id="vp" aria-pressed="false">Preview</button>
+      </div>
+      <button class="pri" id="paste">Paste</button>
+      <button id="sel">Select all</button>
+      <button id="copy">Copy</button>
+      <button id="fmt">Format</button>
+      <button id="mode">Break down</button>
+      <button id="src">Source</button>
+      <button id="host">Host</button>
+      <button id="clr">Clear</button>
+      <span class="sp">
+      </span>
+      <div class="seg">
+        <button id="pc" aria-pressed="true">PC</button>
+        <button id="mb" aria-pressed="false">Mobile</button>
+      </div>
+    </div>
+    <main>
+      <section class="pane" id="ed">
+        <div class="tabs" id="tabs">
+        </div>
+        <div class="code">
+          <div class="gut" id="gut">
+          </div>
+          <div class="wrap">
+            <pre id="pre">
+            </pre>
+            <textarea id="ta" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Paste or type HTML here">
+            </textarea>
+          </div>
+        </div>
+        <div class="stat" id="st">
+          <span id="msg">
+          </span>
+        </div>
+      </section>
+      <section class="pane" id="pv">
+        <div class="lab" id="lab">Preview: PC</div>
+        <div class="stage">
+          <div class="frame" id="fr">
+            <iframe id="out" title="Preview" sandbox="allow-scripts allow-forms allow-modals allow-popups">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="modal">
+      <div class="mod">
+        <button class="close" id="xmod">✕</button>
+        <div id="content">
+        </div>
+      </div>
+    </div>
+    <div id="toast">
+    </div>
+  </body>
+</html>
